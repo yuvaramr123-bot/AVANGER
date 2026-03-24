@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meen Vazhi AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌊 Meen Vazhi AI</h1>
+        <p>Smart Fisheries Support System</p>
+    </header>
+
+    <section class="card">
+        <h2>📍 Fish Location Prediction</h2>
+        <p id="fishLocation">Loading prediction...</p>
+        <button onclick="getFishLocation()">Check Location</button>
+    </section>
+
+    <section class="card">
+        <h2>🌦 Weather Alert</h2>
+        <p id="weatherStatus">Fetching weather data...</p>
+        <button onclick="getWeatherAlert()">Check Weather</button>
+    </section>
+
+    <section class="card">
+        <h2>⛽ Fuel Optimized Route</h2>
+        <p id="routeInfo">Route info will appear here.</p>
+        <button onclick="getRoute()">Get Route</button>
+    </section>
+
+    <section class="card">
+        <h2>💰 Market Price Forecast</h2>
+        <p id="marketPrice">Market price loading...</p>
+        <button onclick="getMarketPrice()">Check Price</button>
+    </section>
+
+    <section class="card">
+        <h2>🔊 Tamil Voice Alert</h2>
+        <button onclick="speakTamil()">Play Voice Alert</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e6f7ff;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.card {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #0096c7;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #023e8a;
+}
+
+h2 {
+    margin-top: 0;
+}
